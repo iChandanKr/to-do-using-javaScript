@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+   <div class="container">
+    <h1>Daily Goals</h1>
+    <form >
+        <input type="text" id="title" placeholder="Title Here">
+        <textarea id="description"  required placeholder="Description Here"></textarea>
+        <button type="submit" onclick="submitForm()">Click</button>
+
+    </form>
+    <!-- <div class="task">
+    <div>
+        <p>your Title</p>
+        <span>your description</span>
+
+    </div>write code to clear all the input fields after submit the html form 
+
+
+    <button class="deleteBtn">-</button>
+    </div> -->
+      
+  
+   </div>
+   <script>
+    function submitForm(){
+        const inputs = document.getElementsByTagName("input");
+        for(let i=0;i<inputs.length;i++){
+            inputs[i].value = '';
+        }
+
+    }
+   </script>
+    <script src="./toDo.js"></script>
+</body>
+</html>

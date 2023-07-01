@@ -1,0 +1,88 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    /* border: 1px solid red   ; */
+}
+body{
+    background-color: antiquewhite;
+}
+.container{
+    background-color: white;
+    width: 70%;
+    margin:auto;
+    padding: 30px;
+    min-height: 100vh;
+    box-sizing: border-box;
+   
+
+
+}
+.container>h1{
+    font-family:sans-serif ;
+    text-align: center;
+    color: black;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+
+input,textarea,button{
+    border: 1px solid rgba(0,0,0,0.2);
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+    outline: none;
+    font:100 1.1rem sans-serif
+
+};
+
+form>input{
+   
+}   
+form>button{
+    border: none;
+    
+    background-color: rgba(55, 128, 0, 0.689);
+    color: white;
+    cursor: pointer;
+    transition: all 0.5s;
+    
+}
+
+button:hover{
+    background-color: rgba(0, 37, 139, 0.65);
+}
+
+
+.task{
+    color:rgba(0,0,0,0.7) ;
+    background-color: rgba(249, 232, 189, 0.768);
+    padding: 30px;
+    margin: 2vmax;
+    display: flex;
+    align-items: center;
+    
+
+}
+.task>div{
+    width: 100%;
+}
+.task span{
+    color: rgba(0, 0, 0, 0.586);
+    
+
+}
+.deleteBtn{
+    border-radius: 100%;
+    width: 30px;
+    height: 30px;
+    font-size: 1.6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(220, 20, 60, 0.782);
+    color:white
+}
